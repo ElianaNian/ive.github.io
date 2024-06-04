@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IVE</title>
+    <style>
+        header{
+            background-color:rgb(139, 163, 179); 
+            height:90px;
+            width:100%;  
+            position:relative;
+        }
+        h1{
+            color:white;
+            position:absolute;
+            left:50%;
+            transform:translateX(-50%);
+            top: 50%;
+            transform: translate(-50%, -50%);
+            margin: 0;
+        }
+        header a{
+            color:white;
+            text-decoration:none;
+        }
+        h2{
+            color:rgb(113, 119, 136);
+        }
+        .intro{
+            height:85vh;
+            background-image:url("images/12.jpg");
+            background-repeat:no-repeat;
+            background-size:cover;
+            background-position:center;
+            display:flex;
+            flex-direction: column;
+            align-items:center;
+        }
+        .slogan{
+            font-size: 25px;
+            background-color:rgb(139, 163, 179);
+            color:white;
+            height:100px;
+            display:flex;
+            justify-content:center;
+            align-content:center;
+            line-height: 1.8em;
+            padding-top: 20px;
+        }
+        .m{
+            font-size: 30px;
+            background-color:rgb(139, 163, 179);
+            color:white;
+            height:130px;
+            display:flex;
+            flex-direction: column;
+            justify-content:center;
+            align-content:center;
+            line-height: 1.8em;
+            padding-top: 20px;
+            text-align: center;
+        }
+        .m h3 {
+            font-size: 40px;
+            margin: 3px 0; 
+        }
+        .m p {
+            font-size: 20px; 
+            margin: 3px 0;
+        }          
+        .ive{
+            display: flex;
+        }
+        .ive img{
+            width: 50%;
+        }
+        .info{
+            width: 50%;
+            background-color: #f0f0f0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .info ul{
+            text-align: center;
+            line-height: 1.8em;
+            list-style-type: none;
+            font-size: 1.6em;
+        }
+        .info a {
+            color: grey;
+            text-decoration: none;
+        }
+        .info li {
+            margin-bottom: 30px; 
+        }
+        .info a:hover {
+            text-decoration: underline; 
+        }
+        .member{
+            display: flex;
+            flex-wrap: wrap; 
+            background-color: #f0f0f0;
+            justify-content: space-between;
+            align-items: center;
+            padding: 100px 20px; 
+            gap: 20px; 
+        }
+        .member div{
+            width: calc(33.33% - 20px); 
+            text-align: center;
+        }
+        .member img{
+            width: 70%;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+        .member h3{
+            font-size: 20px;
+            margin: 20px 0; 
+        }
+        .member h3 a {
+            font-size: 25px;
+            color: gray; 
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+    <h1>IVE</h1>
+    </header>
+    <main>
+    <section class="intro">
+    <h2>Dive into IVE! 大家好，我們是IVE!</h2>
+    </section>
+
+    <section class="slogan">
+    <blockquote>숨 참고 love dive</blockquote>
+    </section>
+     
+    <section class="ive">
+    <img src="images/ive1.jpg">
+    <div class="info">
+    <ul>
+        <li><a href="intro.html">團體介紹</a></li>
+        <li><a href="music.html">音樂作品</a></li>
+        <li><a href="minive.html">MINI'VE</a></li>
+        <li><a href="awards.html">獎項</a></li>
+        <li><a href="concert.html">演唱會</a></li>
+    </ul>
+    </div>
+    </section>
+
+    <section class="m">
+        <h3><strong>成員</strong></h3>
+        <p>(點圖片和字可到成員介面)</p>
+    </section>
+
+    <section class="member">
+        <div>
+            <h3><a href="yujin.html">Yujin</a></h3>
+            <a href="yujin.html"><img src="images/yujin/yujin1.jpg"></a>
+        </div>
+
+        <div>
+            <h3><a href="gaeul.html">Gaeul</a></h3>
+            <a href="gaeul.html"><img src="images/gaeul/gaeul1.jpg"></a>
+        </div>
+
+        <div>
+            <h3><a href="rei.html">Rei</a></h3>
+            <a href="rei.html"><img src="images/rei/rei1.jpg"></a>
+        </div>
+
+        <div>
+            <h3><a href="wonyoung.html">Wonyoung</a></h3>
+            <a href="wonyoung.html"><img src="images/wonyoung/wonyoung1.jpg"></a>
+        </div>
+
+        <div>
+            <h3><a href="liz.html">Liz</a></h3>
+            <a href="liz.html"><img src="images/liz/liz1.jpg"></a>
+        </div>
+
+        <div>
+            <h3><a href="leeseo.html">Leeseo</a></h3> 
+            <a href="leeseo.html"><img src="images/leeseo/leeseo1.jpg"></a>
+        </div>
+        </section>
+    </main>
+</body>
+</html>

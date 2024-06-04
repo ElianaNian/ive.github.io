@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>homework</title>
+    <style>
+        header{
+            background-color:rgb(139, 163, 179); 
+            height:90px;
+            width:100%;  
+            position:relative;
+        }
+        h1{
+            color:white;
+            position:absolute;
+            left:50%;
+            transform:translateX(-50%);
+            top: 50%;
+            transform: translate(-50%, -50%);
+            margin: 0;
+        }
+        header a{
+            color:white;
+            text-decoration:none;
+        }
+        h2{
+            color:rgb(113, 119, 136);
+        }
+        section {
+            background-color: #f0f0f0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            margin: 10px;
+            border-radius: 10px;
+        }
+        form {
+            margin: 20px 0;
+        }
+        form p {
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <h1>作業</h1>
+</header>
+
+<section>
+    <form action="cgi-bin/get.exe" method="get">
+        <h2>請輸入會員資料</h2>
+        <p>姓名:<input type="text" name="user" size="5"></p>
+        <p>地址:<input type="text" name="addr"></p>
+        <p><input type="submit" value="確認">
+            <input type="reset" value="取消"></p>
+    </form>
+
+    <form action="cgi-bin/get.exe" method="get">
+        <h2>歡迎進入eliana系統</h2>
+        <p>帳號:<input type="text" name="user" autofocus></p>
+        <p>密碼:<input type="password" name="pwd" required></p>
+        <p><input type="submit" value="確認">
+            <input type="reset" value="取消"></p>
+    </form>
+</section>
+
+<section>
+    <h2>台灣旅遊景點排名</h2>
+    <ol type="a">
+        <li>故宮博物館</li>
+        <li>日月潭</li>
+        <li>阿里山</li>
+    </ol>
+
+    <h2>台灣夜市排名</h2>
+    <ol type="A">
+        <li>士林夜市</li>
+        <li>永康夜市</li>
+        <li>逢甲夜市</li>
+    </ol>
+
+    <h2>台灣人口排名</h2>
+    <ol type="i">
+        <li>新北市</li>
+        <li>台北市</li>
+        <li>桃園市</li>
+    </ol>
+
+    <h2>台灣最健康大學排名</h2>
+    <ol reversed="reversed">
+        <li>明志科大</li>
+        <li>臺灣體院</li>
+        <li>臺北體院</li>
+    </ol>
+</section>
+
+<section>
+    <table border="1">
+        <thead>
+            <tr><th>店名</th><th>地址</th><th>營業時間</th></tr>
+        </thead>
+
+        <tbody>
+            <tr><td>天母店</td><td>台北市忠誠路200號</td>
+            <td rowspan="2">00:00-23:00</td></tr>
+            <tr><td>大安店</td><td>台北市大安路10號</td></tr>
+            <tr><td>新竹店</td><td>新竹市清華路112號</td><td>11:00-20:00</td></tr>
+        </tbody>
+    </table>
+</section>
+</body>
+</html>
